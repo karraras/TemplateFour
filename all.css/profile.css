@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+:root {
+  --greenColor: #4caf50;
+  --tomatoColor: #ff5722;
+}
+/* ===============================content */
+
+/* =============================== setting */
+
+.content .project > h1::before,
+.content .profile > h1::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: rgb(128 128 128 / 20%);
+  top: 45px;
+  left: 0px;
+}
+.content .project > h1::after,
+.content .profile > h1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: black;
+  top: 45px;
+  left: 0px;
+}
+
+.content .project > h1::before,
+.content .project > h1::after {
+  top: 50px;
+}
+
+/* Start =============================== checket */
+
+.checket input {
+  appearance: none;
+}
+.checket input {
+  width: 80px;
+  height: 20px;
+  display: block;
+  border-radius: 9px;
+  background: gray;
+  position: relative;
+  cursor: pointer;
+}
+
+.checket input::before {
+  content: "\f00d";
+  font-weight: 900;
+  font-family: "FontAwesome";
+  height: 16px;
+  width: 16px;
+  background: white;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  transform: translateX(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.checket input:checked {
+  background: blue;
+}
+.checket input:checked::before {
+  content: "\f00c";
+  color: blue;
+  transform: translateX(62px);
+}
+
+/* End =============================== checket */
+/* =============================== Photo */
+.content .conten {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content .NaProfile {
+  display: flex;
+  align-items: center;
+}
+.content .NaProfile .phProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 210px;
+  min-height: 450px;
+  max-height: 450px;
+  justify-content: space-evenly;
+  padding: 50px 20px;
+}
+.content .NaProfile .phProfile .progress {
+  width: 100%;
+  height: 5px;
+  background: #9e9e9e;
+  position: relative;
+  border-radius: 5px;
+}
+.content .NaProfile .phProfile .progress::before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  background-color: #0075ed;
+  border-radius: 5px;
+}
+.content .NaProfile .texts {
+  width: 100%;
+}
+.content .NaProfile .texts .general {
+  display: grid;
+  gap: 5px;
+  grid-template:
+    "a c d " 40px
+    "b c d" 40px / 1fr 1fr 1fr;
+  border-left: 1px solid gray;
+}
+.content .NaProfile .texts .text {
+  grid-area: a;
+}
+.content .NaProfile .texts p:first-of-type {
+  grid-area: d;
+}
+.content .NaProfile .texts p:last-of-type {
+  grid-area: c;
+}
+.content .NaProfile .texts .checket {
+  grid-area: b;
+}
+
+.content .NaProfile .phProfile img {
+  width: 100px;
+  height: 100px;
+}
+.content .NaProfile .texts .general .checket {
+  display: flex;
+  align-items: center;
+}
+.content .NaProfile .texts .general {
+  padding: 20px;
+}
+.content .NaProfile .texts .general:not(:last-child) {
+  border-bottom: 1px solid rgb(128 128 128 / 30%);
+}
+
+/* =============================== detailz */
+
+.content .conten .detailz {
+  display: flex;
+}
+.content .conten .detailz .mySkill {
+  width: 40%;
+}
+.content .conten .detailz .mySkill > div {
+  padding: 10px 0px;
+  display: flex;
+  gap: 5px;
+}
+.content .conten .detailz .mySkill > div:not(:last-of-type) {
+  border-bottom: solid 1px #b7b7b7;
+}
+.content .conten .detailz .mySkill > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .conten .detailz .mySkill > div span {
+  padding: 5px;
+  background: #cfcfcf;
+  border-radius: 5px;
+}
+.content .conten .detailz {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.content .conten .detailz .activities {
+  width: calc(60% - 20px);
+}
+
+.content .conten .detailz .activities > div:not(:last-of-type) {
+  border-bottom: solid 1px #b7b7b7;
+}
+
+.content .conten .detailz .activities > div .date {
+  text-align: right;
+}
+.content .conten .detailz .activities > div > div {
+  gap: 10px;
+}
+.content .conten .detailz .activities > div img {
+  width: 65px;
+}
+.content .conten .detailz .activities > div > div p:first-of-type {
+  color: black;
+  margin-bottom: 10px;
+}
+.content .conten .detailz .activities > div > div p:last-of-type {
+  color: gray;
+}
+
+/* ================================= Responsive */
+@media (max-width: 1115px) {
+  .content .NaProfile .texts .general {
+    display: grid;
+    gap: 5px;
+    grid-template:
+      "a  c " 40px
+      "b  d" 40px / 1fr 1fr;
+  }
+  .content .NaProfile .texts .text {
+    grid-area: a;
+  }
+  .content .NaProfile .texts p:first-of-type {
+    grid-area: c;
+  }
+  .content .NaProfile .texts p:last-of-type {
+    grid-area: b;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .content .NaProfile .texts .checket {
+    grid-area: d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1025px) {
+  .content .NaProfile .texts .general {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content .NaProfile .texts .checket {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .content .NaProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .NaProfile .texts {
+    width: 100%;
+  }
+  .content .NaProfile .phProfile {
+    min-width: 260px;
+    min-height: 235px;
+    max-height: 450px;
+    padding: 0 50px;
+  }
+  .content .NaProfile .texts .general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-left: none;
+  }
+  .content .NaProfile .texts .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .NaProfile .texts .checket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .conten .detailz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .content .conten .detailz > div {
+    width: 100% !important;
+  }
+  .content .conten .detailz .mySkill > div {
+    display: flex;
+    justify-content: center;
+  }
+  .content .conten .detailz .activities > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .content .conten .detailz .activities > div .date {
+    text-align: center;
+  }
+  .content .conten .detailz .activities > div > div {
+    flex-direction: column;
+  }
+}

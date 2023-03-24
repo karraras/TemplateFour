@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+:root {
+  --greenColor: #4caf50;
+  --tomatoColor: #ff5722;
+}
+.projectPage {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.projectPage .ElDash {
+  background: white;
+  padding: 10px;
+  width: 538px;
+}
+.projectPage .ElDash .head {
+  display: flex;
+  justify-content: space-between;
+}
+.projectPage .ElDash .head .leftH {
+  padding: 10px;
+}
+.projectPage .ElDash .head .pic {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.projectPage .ElDash .head .pic img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px white;
+  position: relative;
+}
+.projectPage .ElDash .head .pic img:hover {
+  z-index: 33;
+}
+
+.projectPage .ElDash .head .pic img:not(:first-of-type) {
+  margin-left: -10px;
+}
+
+.projectPage .ElDash .lang {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 5px;
+  border-top: solid 1px #bdbdbd;
+  border-bottom: solid 1px #bdbdbd;
+  padding: 15px 0px;
+}
+.projectPage .ElDash .lang li {
+  padding: 5px 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+.projectPage .ElDash .pro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.projectPage .ElDash .progr {
+  height: 5px;
+  width: 200px;
+  background: #bdbdbd;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.projectPage .ElDash .progr span {
+  width: 50%;
+  height: 100%;
+  display: block;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border-radius: 5px;
+}
+/* ========================================= Responsive projects */
+@media (max-width: 1115px) {
+  .projectPage {
+    flex-direction: column;
+  }
+  .projectPage .ElDash {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectPage .ElDash .lang {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .projectPage .ElDash .pro {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 39px;
+  }
+}

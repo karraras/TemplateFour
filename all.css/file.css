@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+:root {
+  --greenColor: #4caf50;
+  --tomatoColor: #ff5722;
+}
+
+.filePage {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.filePage .boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: calc(100% - 280px);
+}
+.filePage .box {
+  min-width: 205px;
+  background: white;
+  padding: 10px;
+  border-radius: 7px;
+  flex: 1;
+  position: relative;
+}
+.filePage .box::before {
+  content: "\f019";
+  font-weight: 600;
+  font-family: "FontAwesome";
+  color: gray;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.filePage .box .head {
+  text-align: center;
+  padding: 10px 0px;
+}
+.filePage .box .head img {
+  width: 80px;
+  transition: 0.3s;
+}
+.filePage .box .head img:hover {
+  transform: rotate(10deg);
+}
+.filePage .box .foter {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #bdbdbd;
+  padding: 5px 0px;
+}
+/* ======================== */
+.stat {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 7px;
+  width: 260px;
+  height: 467px;
+}
+.stat h4 {
+  margin-bottom: 10px;
+}
+.stat .fil {
+  display: flex;
+  align-items: center;
+  border: solid 1px #bdbdbd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+.stat .fil img {
+  width: 40px;
+  margin-right: 10px;
+}
+.stat .fil span {
+  margin-left: auto;
+}
+.stat > span {
+  color: white;
+  background: blue;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 12px auto auto;
+}
+/* ======================== Responsive */
+
+@media (max-width: 768px) {
+  .filePage {
+    flex-direction: column-reverse;
+  }
+  .filePage .boxes {
+    width: 100%;
+  }
+  .stat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Setting</title>
+    <link rel="stylesheet" href="all.css/framework.css">
+    <link rel="stylesheet" href="all.css/style.css">
+    <link rel="stylesheet" href="all.css/setting.css">
+
+    <script src="https://kit.fontawesome.com/0184c2e24c.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="window">
+        <div class="sideBar">
+            <div class="logo">
+                <p>Elzero</p>
+                <span class="ball"></span>
+            </div>
+            <div class="chooses">
+                <a class="dash" href="index.html">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <p>Dashboard</p>
+                </a>
+                <a class="setting active" href="setting.html">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p>Setting</p>
+                </a>
+                <a class="profile" href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                </a>
+                <a class="projects" href="projects.html">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <p>Projects</p>
+                </a>
+                <a class="courses" href="courses.html">
+                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    <p>Courses</p>
+                </a>
+                <a class="friends" href="friends.html">
+                    <i class="fa-solid fa-address-card"></i>
+                    <p>Friends</p>
+                </a>
+                <a class="files" href="files.html">
+                    <i class="fa-regular fa-file"></i>
+                    <p>Files</p>
+                </a>
+                <a class="plans" href="plans.html">
+                    <i class="fa-solid fa-list-check"></i>
+                    <p>Plans</p>
+                </a>
+            </div>
+        </div>
+        <div class="content pd-30">
+            <header>
+                <div class="input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="foto">
+                    <div class="noti">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <img src="./imgs/avatar.png" alt="">
+                </div>
+            </header>
+
+            <div class="setting mb-30">
+                <h1 class="mt-20 ml-20 p-relative">
+                    Setting
+                </h1>
+            </div>
+
+            <div class="inside ml-20 mr-20">
+                <div class=" control p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10 mt-10 ">Site Control</h2>
+                    <p class=" c-gray">Control The Website If There is Maintenace</p>
+                    <div class="check f-between mt-30">
+                        <div class="text">
+                            <h4 class="mb-10">Website Control</h4>
+                            <p class="c-gray">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <input type="checkbox" class="p-relative c-pointer">
+                    </div>
+                    <textarea placeholder="Close Message Content" class="radius-5 p-10 mt-30"></textarea>
+                </div>
+
+                <div class="general p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10  mt-10">General Info</h2>
+                    <p class=" c-gray">General Information About Your Account</p>
+                    <form>
+                        <p class="c-gray mt-20 mb-10">First Name</p>
+                        <input class="w-full p-10 radius-5" type="text" placeholder="First Name">
+                        <p class="c-gray mt-20 mb-10">Last Name</p>
+                        <input class="w-full p-10 radius-5" type="text" placeholder="Last Name">
+                        <div class="email">
+                            <p class="c-gray mt-20 mb-10">Email</p>
+                            <div class="input f-between">
+                                <input class="w-full p-10 radius-5" type="email" placeholder="O@nn.sa">
+                                <p class="ml-20">Change</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class=" security p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10  mt-10">Security Inf</h2>
+                    <p class=" c-gray">Security Information About Your Account</p>
+
+                    <div class="inform mt-10">
+                        <div class="pass f-between pt-20  pr-20 pb-20">
+                            <div class="inf">
+                                <p class="mb-10">Password</p>
+                                <p class="c-gray">Last Change On 25/10/2021</p>
+                            </div>
+                            <p class="p-5 cb-blue c-white w-fit radius-5 pr-10 pl-10 c-pointer">Change</p>
+                        </div>
+                        <div class="fact f-between pt-20 pr-20 pb-20">
+                            <div class="inf">
+                                <p class="mb-10">Two-Factor Authentication</p>
+                                <p class="c-gray">Enable/Disable The Feature</p>
+                            </div>
+                            <input type="checkbox" class="p-relative c-pointer">
+                        </div>
+                        <div class="device f-between pt-20  pr-20 pb-20">
+                            <div class="inf">
+                                <p class="mb-10">Devices</p>
+                                <p class="c-gray">Check The Login Devices</p>
+                            </div>
+                            <p class="w-fit cb-gray p-5 c-black radius-5  pr-10 pl-10 c-pointer ">Devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" social p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10  mt-10">Social Inf</h2>
+                    <p class=" c-gray">Social Media Information</p>
+                    <div class="twitter p-10 cb-gray p-relative mt-20 radius-5">
+                        <i class="fa fa-twitter "></i>
+                        <p>Twitter Usename</p>
+                    </div>
+
+                    <div class="facebook p-10 cb-gray p-relative mt-20 radius-5">
+                        <i class="fa fa-facebook d-block "></i>
+                        <p>Facebook Usename</p>
+                    </div>
+
+                    <div class="linkedin p-10 cb-gray p-relative mt-20 radius-5">
+                        <i class="fa fa-linkedin d-block "></i>
+                        <p>Linkedin Usename</p>
+                    </div>
+
+                    <div class="youtube p-10 cb-gray p-relative mt-20 radius-5">
+                        <i class="fa fa-youtube d-block "></i>
+                        <p>Youtube Usename</p>
+                    </div>
+
+                </div>
+                <div class=" widgets p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10  mt-10">Widgets Control</h2>
+                    <p class=" c-gray">Show/Hide Widgets</p>
+                    <div class="f mt-20">
+                        <input id="q" type="checkbox" checked>
+                        <label for="q"> Quick Draft</label>
+                    </div>
+                    <div class="f mt-20">
+                        <input id="ch" type="checkbox" checked>
+                        <label for="ch">Yearly Targets</label>
+                    </div>
+                    <div class="f mt-20">
+                        <input id="tic" type="checkbox" checked>
+                        <label for="tic">Tickets Statistics</label>
+                    </div>
+                    <div class="f mt-20">
+                        <input id="last" type="checkbox" checked>
+                        <label for="last">Lastest News</label>
+                    </div>
+                    <div class="f mt-20">
+                        <input id="Las" type="checkbox">
+                        <label for="Las"> Lastest Tasks</label>
+                    </div>
+                    <div class="f mt-20">
+                        <input id="top" type="checkbox" checked>
+                        <label for="top">Top Search Items</label>
+                    </div>
+                </div>
+                <div class=" backup p-20 cb-white radius-10 h-full">
+                    <h2 class=" mb-10  mt-10">Backup Manager</h2>
+                    <p class=" c-gray">Control Backup Time And Location</p>
+                    <div class="f mt-20 circle">
+                        <input id="ci" type="radio" name="circle">
+                        <label for="ci">Daily</label>
+                    </div>
+                    <div class="f mt-20 circle">
+                        <input id="ci2" type="radio" name="circle" checked>
+                        <label for="ci2">Weekly</label>
+                    </div>
+                    <div class="f mt-20 circle">
+                        <input id="ci3" type="radio" name="circle">
+                        <label for="ci3">Monthly</label>
+                    </div>
+                    <div class="foote f-between pt-20 pb-20">
+                        <div class="meg fc-center b-g radius-10 p-10">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Megaman</p>
+                        </div>
+                        <div class="zero fc-center b-g radius-10 p-10">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Zero</p>
+                        </div>
+                        <div class="sig fc-center b-g  radius-10 p-10">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Sigma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="text.js"> </script>
+</body>
+
+</html>
